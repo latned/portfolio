@@ -1,0 +1,143 @@
+.projects {
+  text-align: start;
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.projects-container {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  max-width: 735px;
+}
+
+@media (width < 700px) {
+  .projects__project-container--py {
+    width: 343px;
+  }
+}
+
+@media (width > 700px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    gap: 1rem;
+  }
+
+  .projects__project-container--py {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.projects__project-container {
+  display: grid;
+  gap: .5rem;
+}
+
+.projects__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects__btn-container {
+  justify-self: end;
+  margin-top: 4px;
+}
+
+.projects__project-info {
+  margin-bottom: 1rem;
+  display: grid;
+  gap: .5rem;
+}
+
+.projects__project-info--py {
+  display: grid;
+  gap: .5rem;
+}
+
+@media (width > 700px) {
+  .projects__project-info--py {
+    grid-column: 1;
+    grid-row: 1;
+    place-items: start;
+    padding: 1rem 0 0 1rem;
+  }
+}
+
+.projects__title {
+  font-size: 36px;
+}
+
+
+.projects__project-img {
+  width: 100%;
+  max-width: 343px;
+}
+
+.projects__project-title {
+  font-size: 21px;
+}
+
+.projects__project-body {
+  font-size: 18px;
+}
+
+.projects__project-body--features {
+  margin-top: 1rem;
+}
+
+
+.projects__project-link {
+  text-decoration: none;
+}
+
+.projects__project-link-container {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (width > 700px) {
+  .projects__project-link-container {
+    display: none;
+  }
+}
+.projects__project-view-code,
+.projects__project-view-site,
+.download {
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid var(--brd-clr);
+  letter-spacing: 2px;
+  padding-bottom: 4px;
+}
+
+.intro__contact {
+  justify-self: center;
+}
+
+@media (width > 700px) {
+  .intro__contact {
+    justify-self: start;
+  }
+}
+
+.download {
+  font-size: 20px;
+  width: max-content;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+}
+
+.tocenter {
+  justify-self: center;
+}
+
+@media (width > 700px) {
+  .tocenter {
+    margin-top: 1.25rem;
+  }
+}

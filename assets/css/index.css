@@ -1,0 +1,70 @@
+@font-face {
+  font-family: space-grotesk;
+  src: url('../font/space-grotesk.regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: space-grotesk;
+  src: url('../font/space-grotesk.bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: space-grotesk;
+  src: url('../font/space-grotesk.medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+:root {
+  --brd-clr: #65d0a2;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: space-grotesk;
+}
+
+body {
+  background: #151515;
+}
+
+main {
+  text-align: center;
+  gap: 2rem;
+  display: grid;
+  justify-items: center;
+}
+
+p, li {
+  color: #dadada;
+}
+
+.intro,
+.skills,
+.projects {
+  padding: 1rem;
+  max-width: 900px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  font-weight: 500;
+  border-bottom: 2px solid var(--brd-clr);
+  font-size: 16px;
+  padding: 0;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+

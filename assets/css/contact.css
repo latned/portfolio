@@ -1,0 +1,98 @@
+.contact-wrapper {
+  background: #242424;
+}
+
+.contact {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact__info {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact__arrow {
+  font-size: 40px;
+  padding-bottom: 1rem;
+}
+
+.contact__title {
+  font-size: 38px;
+}
+
+footer {
+  display: grid;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.footer__title {
+  letter-spacing: 1px;
+}
+
+@media (width > 700px) {
+  .contact {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .contact__info {
+    text-align: start;
+    padding-left: 5%;
+  }
+
+  .contact__body {
+    max-width: 385px;
+  }
+
+  footer {
+    grid-column: 1 / span 2;
+  }
+}
+
+.contact__credentials {
+  background: #e5e5e5;
+  border-radius: 10px;
+  display: none;
+  gap: 1rem;
+  margin-top: -10rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+@media (width < 400px) {
+  .contact__credentials {
+    padding: 2rem 1rem;
+  }
+}
+
+.contact__close-btn {
+  justify-self: end;
+  cursor: pointer;
+}
+
+.contact__close-btn:hover path{
+  opacity: 1;
+  transition: opacity .15s;
+}
+
+.contact__credentials-container {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  justify-items: start;
+}
+
+.contact__credentials-link,
+.contact__app {
+  color: #000;
+}
+
+span {
+  color: #156188;
+}
+

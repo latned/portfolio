@@ -1,0 +1,26 @@
+.skills {
+  display: grid;
+  gap: 1rem;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+  width: 92%;
+}
+
+.skills__title {
+  font-size: 28px;
+}
+
+.pad {
+  padding: .5rem;
+}
+
+@media (width > 700px) {
+  .skills {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 4rem 2rem;
+  }
+
+  .skills__title {
+    font-size: 32px;
+  }
+}
